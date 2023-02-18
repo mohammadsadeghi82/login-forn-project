@@ -1,0 +1,67 @@
+:root {
+    --blue-back: #007ffd;
+    --semi-dark-blue-tab: #0199fe;
+    --form-back-color: #016df3;
+    --person-color-logo: #174666;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body {
+    background-color: var(--blue-back);
+    position: relative;
+}
+.tab-bar {
+    width: 400px;
+    height: 25px;
+    background-color: var(--semi-dark-blue-tab);
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,150%);
+}
+.tab-bar .circle {
+    width: 10px;
+    height: 10px;
+    background-color: var(--blue-back);
+    position: absolute;
+    border-radius: 50%;
+    transform: translate(20%,70%);
+}
+.tab-bar .circle:nth-child(2) {
+    left: 3%;
+}
+.tab-bar .circle:nth-child(3) {
+    left: 6%;
+}
+.form {
+    width: 400px;
+    height: 300px;
+    background-color: var(--form-back-color);
+    position: absolute;
+    transform: translate(-50%,20%);
+    left: 50%;
+}
+.form .bi-person-circle {
+    font-size: 70px;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    color: var(--person-color-logo);
+}
+.form input , button {
+    width: 90%;
+    height: 10%;
+    transform: translate(4%,35%);
+    margin: 10px 0;
+    padding: 0 3px;
+    border: none;
+    outline: none;
+}
+button {
+    width: 91%;
+    background-color: var(--semi-dark-blue-tab);
+    color: snow;
+    cursor: pointer;
+}

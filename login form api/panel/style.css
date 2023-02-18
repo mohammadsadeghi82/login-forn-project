@@ -1,0 +1,81 @@
+:root {
+    --gray-color: #dfe4ea;
+    --panel-background: #ced6e0;
+    --bywharf: #747d8c;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--gray-color);
+    position: relative;
+}
+.panel {
+    width: 700px;
+    height: 500px;
+    background-color: var(--panel-background);
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    overflow-y: scroll;
+    position: relative;
+    transform: translate(-50%,-50%);
+}
+.panel .admin1 {
+    width: 90%;
+    height: 20%;
+    position: relative;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    inset: 5%;
+    background-color: var(--bywharf);
+}
+.panel .admin1 .left {
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    font-size: 5rem;
+    color: var(--gray-color);
+}
+.panel .admin1 .main {
+    width: 50%;
+    height: 100%;
+    color: var(--gray-color);
+    position: absolute;
+    left: 20%;
+    line-height: 25px;
+}
+.main h3 {
+    margin-top: 8%;
+}
+.panel .admin1 .right {
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+button {
+    width: 90%;
+    height: 30px;
+    margin: 5%;
+    cursor: pointer;
+    background-color: var(--panel-background);
+    border: none;
+}
+button span {
+    margin-right: 5px;
+}
+
+.panel::-webkit-scrollbar-thumb {
+    width: 10%;
+    height: 100%;
+    position: absolute;
+    background-color: aqua;
+}
